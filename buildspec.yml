@@ -21,9 +21,9 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"authapp","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
-      - mv target/*.jar checklist-ms.jar
+      - mv target/*.jar severity-ms.jar
       - dir
 artifacts:
   files:
     - imagedefinitions.json
-    - checklist-ms.jar
+    - severity-ms.jar
